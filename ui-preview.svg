@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f7f8"/>
+      <stop offset="1" stop-color="#ececee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="820" height="330" rx="22" fill="url(#bg)"/>
+
+  <!-- macOS menu bar -->
+  <g filter="url(#shadow)">
+    <rect x="34" y="30" width="752" height="38" rx="10" fill="#202124"/>
+    <text x="55" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600" fill="#fff">Codex</text>
+    <text x="650" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#d9d9da">⌁</text>
+    <text x="686" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#d9d9da">◔</text>
+    <text x="722" y="55" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#d9d9da">18:46</text>
+
+    <!-- Real-size status item: 5H remaining 72%, weekly remaining 38% -->
+    <g transform="translate(572 49)">
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#5a5c60" stroke-width="2.2"/>
+      <circle cx="0" cy="0" r="10" fill="none" stroke="#34c759" stroke-width="2.2" stroke-linecap="round"
+              pathLength="100" stroke-dasharray="72 28" transform="rotate(-90)"/>
+      <text x="0" y="2.4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="6.6" font-weight="700" fill="#fff">5H</text>
+
+      <circle cx="28" cy="0" r="10" fill="none" stroke="#5a5c60" stroke-width="2.2"/>
+      <circle cx="28" cy="0" r="10" fill="none" stroke="#ff9f0a" stroke-width="2.2" stroke-linecap="round"
+              pathLength="100" stroke-dasharray="38 62" transform="rotate(-90 28 0)"/>
+      <text x="28" y="2.4" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="6.6" font-weight="700" fill="#fff">1W</text>
+    </g>
+  </g>
+
+  <text x="410" y="106" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" fill="#68696d">菜单栏实际效果（示例：5 小时剩余 72%，每周剩余 38%）</text>
+
+  <!-- Enlarged explanation -->
+  <g transform="translate(257 202)">
+    <circle cx="0" cy="0" r="52" fill="#fff" stroke="#d9dadd" stroke-width="11"/>
+    <circle cx="0" cy="0" r="52" fill="none" stroke="#34c759" stroke-width="11" stroke-linecap="round"
+            pathLength="100" stroke-dasharray="72 28" transform="rotate(-90)"/>
+    <text x="0" y="7" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700" fill="#202124">5H</text>
+    <text x="0" y="81" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600" fill="#34a853">剩余 72%</text>
+  </g>
+
+  <g transform="translate(563 202)">
+    <circle cx="0" cy="0" r="52" fill="#fff" stroke="#d9dadd" stroke-width="11"/>
+    <circle cx="0" cy="0" r="52" fill="none" stroke="#ff9f0a" stroke-width="11" stroke-linecap="round"
+            pathLength="100" stroke-dasharray="38 62" transform="rotate(-90)"/>
+    <text x="0" y="7" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="700" fill="#202124">1W</text>
+    <text x="0" y="81" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="600" fill="#d77b00">剩余 38%</text>
+  </g>
+
+  <text x="410" y="309" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#7b7c80">绿色 &gt; 50%　·　橙色 21%–50%　·　红色 ≤ 20%</text>
+</svg>
